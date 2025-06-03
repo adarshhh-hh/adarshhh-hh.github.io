@@ -886,3 +886,63 @@ body {
     height: 180px;
   }
 }
+
+/* Ensure consistent font for section titles everywhere */
+.section-title {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 48px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+/* Also explicitly set font for mobile in media queries if needed */
+@media (max-width: 600px) {
+  .section-title {
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 36px; /* smaller size on mobile */
+    margin-bottom: 30px;
+  }
+}
+
+/* Fix navigation overlapping issue */
+.site-header {
+  position: relative; /* If you are using fixed, change it */
+  z-index: 10;
+  padding: 20px 20px; /* smaller padding for mobile */
+  background-color: #000;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap; /* allow nav links to wrap on small screens */
+  gap: 15px;
+}
+
+.nav-links a {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 20px;
+  white-space: nowrap; /* prevent wrapping inside nav links */
+}
+
+/* Responsive nav adjustments */
+@media (max-width: 600px) {
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin-left: 0;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  /* add padding top to body or main section to avoid overlap */
+  body, .main-content, .cinematography-section, .reels-section, .edits-section, .productions-section {
+    padding-top: 80px; /* adjust to header height */
+  }
+}
