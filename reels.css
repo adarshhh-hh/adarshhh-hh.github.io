@@ -77,3 +77,38 @@ body::before {
   height: 210px;
   border-radius: 12px;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .video-grid {
+    flex-direction: column; /* stack videos vertically */
+    gap: 20px;
+    max-width: 100%; /* full width on smaller screens */
+    padding: 0 20px; /* some side padding */
+  }
+
+  .video-item {
+    width: 100%; /* full container width */
+    max-width: 400px; /* optional max width for large phones */
+    margin: 0 auto; /* center horizontally */
+  }
+
+  .video-item iframe {
+    height: 180px; /* slightly smaller height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 32px; /* smaller title on small phones */
+  }
+
+  .video-item iframe {
+    height: 150px; /* smaller iframe height on small phones */
+  }
+
+  .nav-links a {
+    font-size: 14px; /* smaller nav font */
+    margin-left: 15px;
+  }
+}

@@ -760,3 +760,129 @@ body {
 .contact-form button:hover {
   background-color: #8cbf6a;
 }
+
+/* Mobile Responsive Styles */
+
+@media (max-width: 768px) {
+
+  /* Header - stack nav links vertically and center */
+  .site-header {
+    padding: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin: 10px 15px;
+    font-size: 1.1rem;
+  }
+
+  /* Hero Section */
+  .hero-content {
+    position: static;
+    transform: none;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+    justify-content: center;
+  }
+
+  /* About Section - stack image and text vertically */
+  .about-container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 12px;
+  }
+
+  .about-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Grid Section */
+  .grid-section {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .grid-item {
+    font-size: 1.6rem;
+    padding: 40px 20px;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 60px 20px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info, .contact-form {
+    flex: 1 1 100%;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Form inputs full width */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    padding: 10px 15px;
+    width: 100%;
+  }
+
+  /* Video grid for smaller screens */
+  .video-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .video-item iframe,
+  .video-item video {
+    height: 180px;
+  }
+}

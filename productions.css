@@ -82,3 +82,37 @@ body::before {
   height: 200px;
   border-radius: 12px;
 }
+/* Responsive tweaks for productions page */
+@media (max-width: 768px) {
+  .video-grid, .video-bottom {
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .video-item {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .video-item iframe {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 32px;
+  }
+
+  .video-item iframe {
+    height: 150px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
