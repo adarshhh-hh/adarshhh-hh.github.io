@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio - Video Editor</title>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="brand"></div>
+  <nav class="nav-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#works">Works</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+
+<section class="hero">
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="assets/videos/your-video.mp4" type="video/mp4" />
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <p class="hero-subtitle">EDITOR - CINEMATOGRAPHER</p>
+    <h1 class="hero-title">ADARSH M R</h1>
+    <!--<a href="#contact" class="btn contact-btn">OF LIGHT AND SHADOW</a>-->
+  </div>
+</section>
+
+
+<section id="about" class="about-section">
+  <div class="about-container">
+    <div class="about-image">
+      <img src="assets/images/your-photo.jpg" alt="Adarsh M R">
+    </div>
+    <div class="about-text">
+      <h2 class="about-title">ABOUT ME</h2>
+      <p>
+       More than an editor, I’m an aspiring filmmaker — always chasing the cut that gives a story its soul. Right now, I’m shaping stories in the edit bay. Soon, I’ll be directing them on set.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="works" class="grid-section">
+  <a href="reels.html" class="grid-item" style="background-image: url('assets/images/reels.jpg');">
+    <h3>SHOWREEL</h3>
+  </a>
+  <a href="edits.html" class="grid-item" style="background-image: url('assets/images/edits.jpg');">
+    <h3>EDITS</h3>
+  </a>
+  <a href="cinematography.html" class="grid-item" style="background-image: url('assets/images/cinematography.jpg');">
+    <h3>CINEMATOGRAPHY</h3>
+  </a>
+  <a href="productions.html" class="grid-item" style="background-image: url('assets/images/productions.jpg');">
+    <h3>PRODUCTIONS</h3>
+  </a>
+</section>
+
+<section id="contact">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Me</h2>
+      <p>
+      
+      </p>
+      <div class="info-item"><i>📞</i>+91 8086945185</div>
+      <div class="info-item"><i>✉️</i>m.adarsh97@gmail.com</div>
+      <div class="info-item"><i>📍</i>Bengaluru</div>
+    </div>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xyzwrrpd" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+  
+        <input type="text" name="_gotcha" style="display:none"> <!-- spam protection -->
+        <input type="hidden" name="_redirect" value="http://localhost:5500/thank-you.html">
+  
+        <button type="submit">Submit</button>
+      </form>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+</body>
+</html>

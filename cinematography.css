@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+/* Add this for transparent background image */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('assets/images/cinematography-bg.jpg') no-repeat center center/cover;
+  opacity: 0.3; /* adjust between 0.05 - 0.3 for desired transparency */
+  z-index: -1;
+}
+
+.site-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  background-color: #000;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.cinematography-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 80px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 48px;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.video-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.video-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.video-item {
+  background-color: #111;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  width: 360px;
+  transition: transform 0.3s ease;
+}
+
+.video-item:hover {
+  transform: translateY(-5px);
+}
+
+.video-item iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+}
+
+.video-item p {
+  margin-top: 12px;
+  font-size: 14px;
+}
