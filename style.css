@@ -282,16 +282,16 @@ body, html {
 }
 
 .bg-video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: contain;
   z-index: -2;
   will-change: transform;
-  backface-visibility: hidden;
   transform: translateZ(0);
+  backface-visibility: hidden;
 }
 
 .overlay {
