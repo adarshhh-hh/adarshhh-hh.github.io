@@ -787,21 +787,21 @@ body {
 
   /* Hero Section */
   .hero-content {
-    position: static;
-    transform: none;
-    max-width: 100%;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
   }
 
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
+  .hero-subtitle,
   .hero-title {
-    font-size: 2.8rem;
+    display: inline;
+    font-size: 1.2rem;
+    margin: 0;
+    white-space: nowrap;
   }
-
   .hero {
     height: auto;
     padding: 80px 20px;
@@ -944,31 +944,6 @@ body {
   /* add padding top to body or main section to avoid overlap */
   body, .main-content, .cinematography-section, .reels-section, .edits-section, .productions-section {
     padding-top: 80px; /* adjust to header height */
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-subtitle,
-  .hero-title {
-    display: inline;
-    font-size: 1.2rem; /* optional: smaller font for subtitle */
-  }
-
-  .hero-content {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-    padding: 0 20px;
-  }
-}
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
   }
 }
 
