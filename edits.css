@@ -95,30 +95,3 @@ body::before {
   margin-top: 10px;
   font-size: 14px;
 }
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .video-row {
-    flex-direction: column;  /* stack videos vertically */
-    gap: 20px;
-  }
-
-  .video-item {
-    width: 100%;  /* full width inside container */
-    max-width: 360px; /* optional max width */
-  }
-
-  .video-item iframe {
-    height: 200px; /* keep consistent height */
-  }
-}
-
-@media (max-width: 480px) {
-  .section-title {
-    font-size: 28px;  /* smaller title on very small screens */
-  }
-  
-  .video-item iframe {
-    height: 160px;  /* smaller iframe height on very small screens */
-  }
-}
